@@ -1,0 +1,66 @@
+body{
+  background-color: #ddd;
+  line-height: 1.7;
+}
+
+div{
+  line-height: 1.1;
+}
+
+a{
+  border-radius: 5px;
+  padding: 5px;
+  margin: 3px;
+  background-color: #77f;
+  color: #fff;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+a:visited{
+  color: #fff;
+}
+
+a:hover{
+  color: #afa;
+}
+
+input[type='text']{
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #00f;
+  padding: 3px;
+  font-size: 16px;
+}
+
+input[type='button'], button{
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #0f0;
+  padding: 3px;
+  font-size: 16px;
+}
+
+input[type='button']:hover, button:hover{  
+  background-color: #0f0;  
+  color: #fff;
+}
+
+input[type='button']:active, button:active{
+  border-color: #9f9;
+}
+
+#output{
+  float: left;
+  background-color: #ff9;
+  margin: 10px 3px;
+  padding: 3px;
+}
+
+#output:empty{
+  visibility: hidden;
+}
+
+.clear{
+  clear: both;
+}
