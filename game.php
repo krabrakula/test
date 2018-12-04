@@ -13,7 +13,7 @@ class animal {
 		
 	}
 	
-	public function do() {
+	public function dodooo() {
 		echo "Жрать срать рOжать";
 	}
 	
@@ -35,8 +35,8 @@ class human extends animal {
 		parent::__construct($paws);
 		$this->hands = $hands;
 	}
-	public function do() {
-		parent::do();
+	public function dodoo() {
+		parent::dodoo();
 		echo " Говорить глупости <br>";
 	}
 	public function intuition() {
@@ -112,7 +112,6 @@ class cityzen extends human {
 		};
 	}
 }
-$pig = new animal(4);
 
 $pig = new animal("4");
 var_dump($pig);
@@ -128,9 +127,9 @@ $negra->brain = "1";
 $negra->intuition();
 $negra->switch_ass();
 $negra->intuition();
-$pig->do();
+$pig->dodoo();
 echo "<br>";
-$negra->do();
+$negra->dodoo();
 
 $vasia_poooopkin = new cityzen();
 $vasia_poooopkin->name = "Вася";
