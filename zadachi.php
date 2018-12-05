@@ -12,10 +12,12 @@ for ($index = 0; $index < count($arr); $index++) {
 function calc($arr) {
   $time = 0;
   for ($score = 0; $score < count($arr); $score++) {
+
     if ($time + $arr[$score] > 300){
-      $time = $time + $arr[$score];
       break;
-    }
+    } 
+    $time = $time + $arr[$score];
+    
   } ;
   return array($score, $time);
 }
@@ -30,15 +32,15 @@ $st5 = calc($arr);
 
 $chart = array ($st1, $st3, $st5);
 for ($index1 = 0; $index1 < count($chart); $index1++) {
-  if ($chart[$index1][1] < $chart[$index1+1]){
-
-  }
+  array_push($chart[$index1], (count($chart)-$index1));
+  
 }
 
-//echo var_dump($arr);
-//echo var_dump($st1_arr);
+
+echo var_dump($chart);
+
 echo var_dump($st1);
 echo var_dump($st3);
 echo var_dump($st5);
 
-//echo "$score<br>$time";
+
